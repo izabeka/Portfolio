@@ -7,9 +7,9 @@
 }
 
 html {
+    background-color: #fff;
     font-family: Raleway, 'Open Sans', sans-serif;
     max-width: 1440px;
-    min-width: 575px;
 }
 
 a:hover, a:visited, a:link, a:active
@@ -20,64 +20,89 @@ a:hover, a:visited, a:link, a:active
 /*Navigation bar*/
 
 .Menu {
-    align-content: center;
-    align-items: center;
+    position:relative;
     color: var(--text-grey);
-    font-size: 1.25rem;
     font-weight: bold; 
-    display: flex;
-    /*grid-template-columns: 1fr  auto auto auto auto;
-    grid-gap: 3%;*/
-    height: 1.5em;
+    display: grid;
+    align-items: center;
+    align-content: center;
+    grid-template-columns: 1fr auto auto auto auto;
+    grid-gap: 3%;
+    height: 2.5em;
+    width: 94%;
     margin: 3% 3% 1% 3%;
-    border: 1px solid green;
+
 }
 
 .Menu a {
     color: var(--text-grey);
 }
 
-.Menu .Logo {
-    align-self: top;
+.Menu p {
     font-size: 1.5em;
-    height: 1.5em;
-    width: auto;
-    margin: 0%;
-    border: 2px solid blue;
 }
 
 /*Main part*/
 
 .Header {
+    position: relative;
     background-image: url('../images/CoverLayer.png'), url('../images/CoverPhoto.png');
     background-repeat: no-repeat;
     background-size: 100% auto;
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
-    mix-blend-mode: lighten;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    flex: 1;
     width: 100%;
+    height: 40.62vw;
 }
 
 .Header h1{
+    position: relative;
     color: var(--orange);
-    font-size: 6.25rem /*vw*/;
+    font-size: 4em;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
 }
 
 .Header h2 {
     color: var(--white);
-    font-size: 2.25rem;
+    font-size: 2em;
+    padding-top: 0;
+    padding-bottom: 0.5em;
+    margin: 0;
+}
+
+.Header .SocialMedia {
+    display: flex;
+    width: 9em;
+    margin: 0px auto;
+    justify-content: space-between;
 }
 
 .Problem {
     background-color: var(--white);
-    width: 100%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
+
 
 .Problem p {
     color: var(--text-black);
     font-size: 2.25rem;
+}
+
+.ProblemButtons {
+    display: flex;
+    width: 25em; 
+    justify-content: space-between;
+    margin: auto;
 }
 
 h3{
@@ -118,12 +143,12 @@ h3{
     font-size: 1.125em;
     padding: 0.5em 1.5em;
     border-radius: 1em;
-    border: 1px none;
+    border: 1px solid var(--white);
 }
 
 #Button:hover {
     background: var(--white);
     color: var(--orange);
     border: 1px solid var(--orange);
-    padding: calc(0.5em-2px) calc(1.5em-2px); /*jak tu zrobic coby nie zmieniala sie szerokosc*/
+    padding: 0.5em 1.5em; 
 }
