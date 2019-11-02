@@ -9,7 +9,6 @@
 html {
     background-color: #fff;
     font-family: Raleway, 'Open Sans', sans-serif;
-    max-width: 1440px;
 }
 
 a:hover, a:visited, a:link, a:active
@@ -17,7 +16,13 @@ a:hover, a:visited, a:link, a:active
     text-decoration: none;
 }
 
-/*Navigation bar*/
+h3{
+    color: var(--text-black);
+    font-family: Ubuntu, 'Open Sans', sans-serif;
+    font-size: 2em;
+}
+
+/*----Navigation bar----*/
 
 .Menu {
     position:relative;
@@ -42,7 +47,7 @@ a:hover, a:visited, a:link, a:active
     font-size: 1.5em;
 }
 
-/*Main part*/
+/*----Main part----*/
 
 .Header {
     position: relative;
@@ -92,7 +97,6 @@ a:hover, a:visited, a:link, a:active
     text-align: center;
 }
 
-
 .Problem p {
     color: var(--text-black);
     font-size: 2.25rem;
@@ -105,38 +109,78 @@ a:hover, a:visited, a:link, a:active
     margin: auto;
 }
 
-h3{
-    color: var(--text-black);
-    font-family: Ubuntu, 'Open Sans', sans-serif;
-    font-size: 2em;
-}
+/*----About me section----*/
 
-/*About me section*/
 .AboutMe {
-    color: var(--orange);
-    font-size: 1.125em;
-    font-weight: bold;
+    display: flex;
+    width: 86%;
+    height: auto;
+    margin: auto;
+    padding: 1% 3%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0.375em 0.375em 1.25em rgba(0, 0, 0, 0.05);
 }
-
-.AboutMe .MoreInfo {
-    color: var(--text-black);
-    font-weight: normal;
-}
+/*Dodać żeby przerzucało MoreInfo do kolejnej linijki dla węższych*/
 
 .AboutMe span {
     color: var(--text-black);
 }
 
-.Profile {
-    width: 7.3%;
-    height: auto;
-    border-radius: 100%;
+.PersonalInfo {
+    color: var(--orange);
+    font-size: 1.125em;
+    font-weight: bold;
+    flex: 2;
+    padding: 1%;
 }
 
-/*Skills section*/
+.Profile {
+    height: auto;
+    width: 1em;
+    border-radius: 100%;
+    flex: 1;
+    padding: 1%;
+}
 
+.MoreInfo {
+    color: var(--text-black);
+    font-weight: normal;
+    flex: 4;
+    border-left: 3px dashed var(--orange);
+    padding: 1%;
+    line-height: 172.35%;
+    font-size: 1.125em;
+}
 
-/*Button section*/
+/*----Skills section----*/
+
+.Skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 1.25em;
+    color: var(--text-black);
+    margin: auto;
+    width: 86%;
+    height: auto;
+    text-align: center;
+    padding: 3%;
+    box-shadow: 0em 0.375em 1.25em rgba(0, 0, 0, 0.05);
+}
+
+.Skills span {
+    color: var(--orange);
+    font-weight: bold;
+}
+
+.Skill2 {
+    border-left: 3px dashed var(--orange);
+    border-right: 3px dashed var(--orange);
+}
+
+/*----Button section----*/
+
 #Button {
     background: linear-gradient(270deg, var(--orange) 14%, #FF9A3D 68.5%);
     color: var(--white);
