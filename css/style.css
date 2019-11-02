@@ -1,8 +1,8 @@
 :root {
-    --main-bg-color: #e1e1e1;
     --text-grey: #515151;
     --text-black: #222222;
-    --text-orange: #FFC53D;
+    --orange: #FFC53D;
+    --white: #fff;
 
 }
 
@@ -60,17 +60,17 @@ a:hover, a:visited, a:link, a:active
 }
 
 .Header h1{
-    color: var(--text-orange);
+    color: var(--orange);
     font-size: 6.25rem /*vw*/;
 }
 
 .Header h2 {
-    color: #ffffff;
+    color: var(--white);
     font-size: 2.25rem;
 }
 
 .Problem {
-    background-color: #ffffff;
+    background-color: var(--white);
     width: 100%;
     margin: auto;
 }
@@ -80,14 +80,6 @@ a:hover, a:visited, a:link, a:active
     font-size: 2.25rem;
 }
 
-#Button {
-    background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
-    color: #ffffff;
-    font-size: 1.125em;
-    padding: 0.5em 1.5em;
-    border-radius: 1em;
-}
-
 h3{
     color: var(--text-black);
     font-family: Ubuntu, 'Open Sans', sans-serif;
@@ -95,18 +87,18 @@ h3{
 }
 
 /*About me section*/
-#AboutMe {
-    color: var(--text-orange);
+.AboutMe {
+    color: var(--orange);
     font-size: 1.125em;
     font-weight: bold;
 }
 
-#AboutMe .MoreInfo {
+.AboutMe .MoreInfo {
     color: var(--text-black);
     font-weight: normal;
 }
 
-#AboutMe span {
+.AboutMe span {
     color: var(--text-black);
 }
 
@@ -114,4 +106,24 @@ h3{
     width: 7.3%;
     height: auto;
     border-radius: 100%;
+}
+
+/*Skills section*/
+
+
+/*Button section*/
+#Button {
+    background: linear-gradient(270deg, var(--orange) 14%, #FF9A3D 68.5%);
+    color: var(--white);
+    font-size: 1.125em;
+    padding: 0.5em 1.5em;
+    border-radius: 1em;
+    border: 1px none;
+}
+
+#Button:hover {
+    background: var(--white);
+    color: var(--orange);
+    border: 1px solid var(--orange);
+    padding: calc(0.5em-2px) calc(1.5em-2px); /*jak tu zrobic coby nie zmieniala sie szerokosc*/
 }
