@@ -1,0 +1,74 @@
+:root {
+    --main-bg-color: #e1e1e1;
+    --text-grey: #515151;
+    --text-black: #222222;
+    --text-orange: #FFC53D;
+
+}
+
+html {
+    font-family: Raleway, 'Open Sans', sans-serif;
+    max-width: 1440px;
+    min-width: 575px;
+}
+
+/*Navigation bar*/
+
+.Logo {
+    display: flex;
+}
+
+/*w menu dodac cos coby nie zanikaly czesci pozostale po zwezeniu*/
+.Menu {
+    color: var(--text-grey);
+    display: grid;
+    font-size: 1.25em;
+    font-weight: bold; 
+    grid-template-columns: 1fr  auto auto auto auto;
+    grid-gap: 3%;
+    border: 1px solid green;
+}
+
+.Menu a {
+    color: var(--text-grey);
+    
+}
+
+.Menu p {
+    font-size: 1.5em;
+}
+
+/*Main part*/
+
+.Header {
+    background-image: url('../images/CoverLayer.png'), url('../images/CoverPhoto.png');
+    background-size: cover;
+    border: 1px solid red;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Header h1{
+    color: var(--text-orange);
+    font-size: 6.25vw;
+}
+
+.Header h2 {
+    color: #ffffff;
+    font-size: 2.25em;
+}
+
+.Problem {
+    background-color: #ffffff;
+    width: 100%;
+    margin: auto;
+    
+}
+
+.Problem p {
+    color: var(--text-black);
+    font-size: 2.25em;
+}
+
