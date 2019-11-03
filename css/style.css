@@ -164,7 +164,7 @@ h3{
 
 #AboutMe-Section .Profile {
     height: auto;
-    width: 1rem;
+    width: 100px;
     border-radius: 100%;
     flex: 1;
     padding: 1%;
@@ -228,6 +228,10 @@ h3{
 }
 
 /*----Portfolio----*/
+
+#Portfolio-Section h3 {
+    text-align: center;
+}
 
 .Gallery {
     display: flex;
@@ -421,14 +425,235 @@ h3{
     }
 }
 
-@media all and (max-width: 992px) and (min-width: 768px) {
+@media all and (max-width: 991px) and (min-width: 768px) {
     .root{
         font-size: 16px;
     }
+
+    /*---Nav bar---*/
+
+    .Menu {
+        font-size: 1.25rem;
+    }
+
+    /*---Header---*/
+  
+    .Header h1{
+        font-size: 4rem;
+    }
+
+    .Header h2 {
+        font-size: 2rem;
+    }
+
+    .Header .SocialMedia {
+        width: 9rem;
+        padding-bottom:3rem;
+    }
+
+    /*---About Me---*/
+
+    .PersonalInfo {
+        flex: 0.67;
+    }
+    
+    #AboutMe-Section .Profile {
+        height: auto;
+        width: 50px;
+        flex: 0.33;
+    }
+    
+    .MoreInfo {
+        color: var(--text-black);
+        font-weight: normal;
+        flex: 100%;
+        border-top: 3px dashed var(--orange);
+        border-left: none;
+    }
+
+    /*---Contact---*/
+
+    .Instruction {
+        padding: 1.5rem;
+    }
+
+    .Instruction .SocialMedia {
+        flex: 1;
+        display: flex;
+        width: 75%;
+        justify-content: space-between;
+    }
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 767px) and (min-width: 576px) {
     .root{
-        font-size: 14px;
+    font-size: 16px;
+    }
+
+    /*---Nav bar---*/
+
+    .Menu {
+        font-size: 1.25rem;
+    }
+
+    /*---Header---*/
+
+    .Header h1{
+        font-size: 4rem;
+    }
+
+    .Header h2 {
+        font-size: 2rem;
+    }
+
+    .Header .SocialMedia {
+        width: 9rem;
+        padding-bottom:3rem;
+    }
+
+    /*---About Me---*/
+
+    .PersonalInfo {
+        flex: 0.67; 
+    }
+
+    #AboutMe-Section .Profile {
+        height: auto;
+        width: 50px;
+        flex: 0.33;
+    }
+
+    .MoreInfo {
+        color: var(--text-black);
+        font-weight: normal;
+        flex: 100%;
+        border-top: 3px dashed var(--orange);
+        border-left: none;
+    }
+
+    /*---Contact---*/
+
+    .Contact {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .Instruction {
+        padding: 1.5rem;
+    }
+
+    .Instruction .SocialMedia {
+        flex: 1;
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+    }
+
+    .Form {
+        padding: 1.5rem;
+    }
+}
+
+@media all and (max-width: 575px) {
+    .root{
+        font-size: 16px;
+    }
+
+    /*---Nav bar---*/
+
+    .Menu {
+        font-size: 1rem;
+    }
+
+    .Menu p {
+        font-size: 1rem;
+    }
+    
+
+    /*---Header---*/
+  
+    .Header h1{
+        font-size: 2rem;
+    }
+
+    .Header h2 {
+        font-size: 1.5rem;
+    }
+
+    .Header .SocialMedia {
+        width: 9rem;
+        padding-bottom:1.5rem;
+    }
+
+    /*---Problem---*/
+    
+    .Problem p {
+        font-size: 1.25rem;
+    }
+
+    .ProblemButtons {
+        width: 24rem; 
+    }
+
+    /*---About Me---*/
+
+    .PersonalInfo {
+        flex: 0.67;
+    }
+    
+    #AboutMe-Section .Profile {
+        height: auto;
+        width: 50px;
+        flex: 0.33;
+    }
+    
+    .MoreInfo {
+        color: var(--text-black);
+        font-weight: normal;
+        flex: 100%;
+        border-top: 3px dashed var(--orange);
+        border-left: none;
+    }
+
+    /*--Skills---*/
+
+    .Skills {
+        display: flex;
+        flex-direction: column;
+        flex: 0.33;
+    }
+
+    .Skill3 {
+        padding-top: 3%;
+    }
+        
+    .Skill2 {
+        border-top: 3px dashed var(--orange);
+        border-bottom: 3px dashed var(--orange);
+        border-left: none;
+        border-right: none;
+        padding-top: 3%;
+    }
+
+    /*---Contact---*/
+  
+    .Contact {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .Instruction {
+        padding: 1rem;
+    }
+
+    .Instruction .SocialMedia {
+        flex: 1;
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+    }
+
+    .Form {
+        padding: 1rem;
     }
 }
