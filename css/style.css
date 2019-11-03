@@ -23,6 +23,7 @@ h3{
     color: var(--text-black);
     font-family: Ubuntu, 'Open Sans', sans-serif;
     font-size: 1.78rem;
+    margin-top: 1rem;
 }
 
 /*----Navigation bar----*/
@@ -110,20 +111,44 @@ h3{
     width: 28rem; 
     justify-content: space-around;
     margin: auto;
+    margin-bottom: 2.89rem;
 }
 
 /*----About me section----*/
 
+#AboutMe-Section{
+    position: relative;
+    display: block;
+    padding: 0;
+    border: 0.5px solid white;
+    margin: 0 0 2rem 0;
+}
+
+#AboutMe-Section .Bg {
+    position: absolute;
+    height: 100%;
+    width: 68%;
+    left: 0;
+    top:0;
+    z-index: -1;
+}
+
 .AboutMe {
+    background-color: var(--white);
     display: flex;
     width: 86%;
     height: auto;
-    margin: auto;
+    margin: 0 auto 4.2rem auto;
     padding: 1% 3%;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     box-shadow: 0.33rem 0.33rem 1.11rem rgba(0, 0, 0, 0.05);
+}
+
+#AboutMe-Section h3 {
+    position: relative;
+    left: 10%;
 }
 
 .AboutMe span {
@@ -137,7 +162,7 @@ h3{
     padding: 1%;
 }
 
-.Profile {
+#AboutMe-Section .Profile {
     height: auto;
     width: 1rem;
     border-radius: 100%;
@@ -156,12 +181,35 @@ h3{
 
 /*----Skills section----*/
 
+#Skills-Section{
+    position: relative;
+    display: block;
+    padding: 0;
+    border: 0.5px solid white;
+    margin: 0 0 2rem 0;
+}
+
+#Skills-Section .Bg {
+    position: absolute;
+    height: 100%;
+    width: 68%;
+    right: 0;
+    top:0;
+    z-index: -1;
+}
+
+#Skills-Section h3 {
+    position: relative;
+    left: 36%;
+}
+
 .Skills {
+    background-color: var(--white);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     font-size: 1.33rem;
     color: var(--text-black);
-    margin: auto;
+    margin: 0 auto 4.2rem auto;
     width: 86%;
     height: auto;
     text-align: center;
@@ -184,12 +232,46 @@ h3{
 .Gallery {
     display: flex;
     flex-wrap: wrap;
+    flex-flow: row wrap;
+    flex-direction: row;
     height:auto;
+    margin-bottom: 2rem;
 }
 
 .Gallery h2 {
     color: var(--white);
     font-size: 2.22rem;
+}
+/*
+.Gallery img{
+    flex: auto;
+    width: auto;
+    height: 100%;
+}*/
+
+.Img1, .Img2, .Img3, .Img4, .Img5 {
+    position:relative;
+    height: 100%;
+    width: auto;
+    background-size: contain;
+    padding: 0;
+    margin: 0;
+}
+
+.Img1 {
+    flex: 1.35;
+}
+
+.Img2, .Img4 {
+    flex: 1;
+}
+
+.Img3 {
+    flex: 1.32;
+}
+
+.Img5 {
+    flex: 2.67;
 }
 
 .Gallery p {
@@ -198,23 +280,22 @@ h3{
     line-height: 1rem;
 }
 
-
-.Img1, .Img5 {
+/*.Img1, .Img5 {
     position: relative;
     height: auto;
     width: auto;
     padding: 0;
     margin: 0;
 }
-
+*/
 .overlay {
     position: absolute;
     display: block;
-    height:100%;
-    width: 100%;
+    height:94%;
+    width: 94%;
     left: 0px;
     top: 0px;
-    padding: 3%;
+    padding:3%;
     background: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%);
     opacity:0;
     transition: opacity 0.5s ease-in-out;
@@ -224,16 +305,26 @@ h3{
     opacity: 1;
 }
 
-.Img5 .overlay {
+.Img5 p {
     width: 50%;
 }
 
 /*----Contact----*/
 
+#Contact-Section {
+    background-color: var(--bg-grey);
+    border: 0.5px solid white;
+}
+
+#Contact-Section .ContactUs {
+    position: relative;    
+    left: 10%;
+}
+
 .Contact {
     display:grid;
     grid-template-columns: 1fr 1.5fr;
-    margin: auto;
+    margin: 0 auto 4.2rem auto;
     width: 86%;
     height: auto;
     box-shadow: 0.33rem 0.33rem 1.11rem rgba(0, 0, 0, 0.05);
@@ -247,22 +338,33 @@ h3{
     box-shadow: 0.33rem 0.33rem 1.11rem rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
+    height: auto;
+    justify-content: center;
 }
 
 .Instruction .Details {
     font-family: Ubuntu, 'Open Sans', sans-serif;
+    flex:5
+}
+
+.Instruction .SocialMedia {
+    flex: 1;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.Instruction .Details {
+    flex: 2;
 }
 
 .Form {
+    background-color: var(--white);
     display: flex;
     flex-direction: column;
     padding: 2.5rem;
-}
-
-.Form h3 {
-    background-image: url('../images/Arr');
-    background-size: auto 1.78rem;
-    background-position: 0 0;
+    position:relative;
+    height: auto;
 }
 
 .Form input {
@@ -283,11 +385,17 @@ h3{
     flex: 3;
 }
 
-.From #Button {
-    
+.Form #Button {
+    align-self: flex-end;
 }
 
 /*----Footer----*/
+
+.Footer{
+    font-size: 0.78rem;
+    text-align: center;
+    margin: 2rem 0;
+}
 
 /*----Button section----*/
 
@@ -296,17 +404,14 @@ h3{
     color: var(--white);
     padding: 0.5rem 1.5rem;
     border-radius: 1rem;
-    border: 1px solid linear-gradient(270deg, var(--orange) 14%, var(--dark-orange) 68.5%);
 }
 
 #Button:hover {
     background: var(--white);
     color: var(--orange);
     border: 1px solid var(--orange);
-    padding: 0.5rem 1.5rem; 
+    padding: 0.39rem 1.39rem; 
 }
-
-/*----Animations----*/
 
 /*----Responsive Veb Design----*/
 
