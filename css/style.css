@@ -11,7 +11,6 @@
 html {
     background-color: #fff;
     font-family: Raleway, 'Open Sans', sans-serif;
-    max-width: 1440px;
 }
 
 a:hover, a:visited, a:link, a:active
@@ -500,12 +499,6 @@ h3{
 }
 
 /*----Responsive Veb Design----*/
-
-@media all and (min-width: 1440px) {
-    .Header {
-        height: 585px;
-    }
-}
 
 @media all and (max-width: 991px) and (min-width: 768px) {
     .root{
