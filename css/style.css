@@ -182,6 +182,7 @@ h3{
 #AboutMe-Section h3 {
     position: relative;
     left: 10%;
+    max-width: 90%
 }
 
 .AboutMe span {
@@ -240,6 +241,7 @@ h3{
 #Skills-Section h3 {
     position: relative;
     left: 36%;
+    max-width: 64%;
 }
 
 .Skills {
@@ -362,6 +364,7 @@ h3{
 #Contact-Section .ContactUs {
     position: relative;    
     left: 10%;
+    max-width: 90%;
 }
 
 .Contact {
