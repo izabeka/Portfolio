@@ -11,6 +11,8 @@
 html {
     background-color: #fff;
     font-family: Raleway, 'Open Sans', sans-serif;
+    max-width: 2000px;
+    min-width: 420px;
 }
 
 a:hover, a:visited, a:link, a:active
@@ -499,6 +501,29 @@ h3{
 }
 
 /*----Responsive Veb Design----*/
+
+@media all and (min-width: 2000px) {
+    .Header {
+        height: 812.24px;
+    }
+ 
+    .Gallery h2 {
+        color: var(--white);
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .Gallery p {
+        color: var(--white);
+        font-size: 0.8rem;
+    }
+
+    .overlay {
+        height:98%;
+        width: 98%;
+        padding: 1%;
+    }
+}
 
 @media all and (max-width: 991px) and (min-width: 768px) {
     .root{
